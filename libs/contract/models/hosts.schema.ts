@@ -40,4 +40,6 @@ export const HostsSchema = z.object({
     xrayJsonTemplateUuid: z.string().uuid().nullable(),
     excludedInternalSquads: z.array(z.string().uuid()),
     excludeFromSubscriptionTypes: z.array(z.nativeEnum(SUBSCRIPTION_TEMPLATE_TYPE)).optional(),
+
+    overridePublicKey: z.string().nullable().optional(),
 });

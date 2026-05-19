@@ -34,6 +34,7 @@ export class HostsEntity implements Hosts {
     vlessRouteId: number | null;
     shuffleHost: boolean;
     mihomoX25519: boolean;
+    overridePublicKey: string | null;
 
     configProfileUuid: string | null;
     configProfileInboundUuid: string | null;

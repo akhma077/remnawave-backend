@@ -405,7 +405,9 @@ export class ResolveProxyConfigService {
                     securityOptions: {
                         fingerprint:
                             override(inputHost.fingerprint, reality?.fingerprint) ?? 'chrome',
-                        publicKey: publicKeyMap.get(inboundTag) || '',
+                        publicKey: inputHost.overridePublicKey
+                            ? inputHost.overridePublicKey
+                            : publicKeyMap.get(inboundTag) || '',
                         shortId,
                         serverName: this.resolveFinalServerName(
                             inputHost,

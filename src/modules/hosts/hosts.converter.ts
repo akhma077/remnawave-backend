@@ -33,6 +33,7 @@ const entityToModel = (entity: HostsEntity): Hosts => {
         allowInsecure: entity.allowInsecure,
         shuffleHost: entity.shuffleHost,
         mihomoX25519: entity.mihomoX25519,
+        overridePublicKey: entity.overridePublicKey ?? null,
 
         tag: entity.tag,
         isHidden: entity.isHidden,

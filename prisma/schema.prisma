@@ -297,6 +297,8 @@ model Hosts {
   nodes                  HostsToNodes[]
   excludedInternalSquads InternalSquadHostExclusions[]
 
+  overridePublicKey       String?   @map("override_public_key")
+
   @@map("hosts")
 }
 
