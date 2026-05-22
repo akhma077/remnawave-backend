@@ -34,6 +34,7 @@ const entityToModel = (entity: HostsEntity): Hosts => {
         shuffleHost: entity.shuffleHost,
         mihomoX25519: entity.mihomoX25519,
         overridePublicKey: entity.overridePublicKey ?? null,
+        overrideVlessUuid: entity.overrideVlessUuid ?? null,
 
         tag: entity.tag,
         isHidden: entity.isHidden,

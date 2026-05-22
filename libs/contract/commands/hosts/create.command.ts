@@ -92,7 +92,8 @@ export namespace CreateHostCommand {
         excludeFromSubscriptionTypes: z
             .optional(z.array(z.nativeEnum(SUBSCRIPTION_TEMPLATE_TYPE)))
             .describe('Optional. Subscription types from which the host will be excluded from.'),
-        overridePublicKey: z.optional(z.string().max(100).nullable()),    
+        overridePublicKey: z.optional(z.string().max(100).nullable()),
+        overrideVlessUuid: z.optional(z.string().uuid().nullable()),
     });
 
     export type Request = z.infer<typeof RequestSchema>;

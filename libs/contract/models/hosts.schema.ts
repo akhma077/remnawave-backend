@@ -42,4 +42,5 @@ export const HostsSchema = z.object({
     excludeFromSubscriptionTypes: z.array(z.nativeEnum(SUBSCRIPTION_TEMPLATE_TYPE)).optional(),
 
     overridePublicKey: z.string().nullable().optional(),
+    overrideVlessUuid: z.string().uuid().nullable().optional(),
 });

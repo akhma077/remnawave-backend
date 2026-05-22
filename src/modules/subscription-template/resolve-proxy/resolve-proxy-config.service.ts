@@ -467,7 +467,9 @@ export class ResolveProxyConfigService {
                 return {
                     protocol: 'vless',
                     protocolOptions: {
-                        id: setVlessRouteForUuid(user.vlessUuid, inputHost.vlessRouteId),
+                        id: inputHost.overrideVlessUuid
+                            ? inputHost.overrideVlessUuid
+                            : setVlessRouteForUuid(user.vlessUuid, inputHost.vlessRouteId),
                         encryption: encryption ?? 'none',
                         flow: getVlessFlow(inbound),
                     },

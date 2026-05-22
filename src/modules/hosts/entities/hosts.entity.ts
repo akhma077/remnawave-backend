@@ -35,6 +35,7 @@ export class HostsEntity implements Hosts {
     shuffleHost: boolean;
     mihomoX25519: boolean;
     overridePublicKey: string | null;
+    overrideVlessUuid: string | null;
 
     configProfileUuid: string | null;
     configProfileInboundUuid: string | null;

@@ -265,7 +265,7 @@ model Hosts {
   path                         String?  @map("path")
   sni                          String?  @map("sni")
   host                         String?  @map("host")
-  alpn                         String?  @map("alpn") // ENUM: h2, http/1.1, h2,http/1.1 
+  alpn                         String?  @map("alpn") // ENUM: h2, http/1.1, h2,http/1.1
   fingerprint                  String?  @map("fingerprint") // ENUM: chrome, firefox, safari, ios, android, edge, 360, qq, random, randomized
   securityLayer                String   @default("DEFAULT") @map("security_layer") // ENUM: DEFAULT, TLS, NONE
   xHttpExtraParams             Json?    @map("xhttp_extra_params")
@@ -298,7 +298,8 @@ model Hosts {
   excludedInternalSquads InternalSquadHostExclusions[]
 
   overridePublicKey       String?   @map("override_public_key")
-
+  overrideVlessUuid       String?   @map("override_vless_uuid")
+  
   @@map("hosts")
 }
 
