@@ -299,7 +299,8 @@ model Hosts {
 
   overridePublicKey       String?   @map("override_public_key")
   overrideVlessUuid       String?   @map("override_vless_uuid")
-  
+  overrideShortId         String?   @map("override_short_id")
+
   @@map("hosts")
 }
 

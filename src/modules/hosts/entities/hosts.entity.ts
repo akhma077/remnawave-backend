@@ -36,6 +36,7 @@ export class HostsEntity implements Hosts {
     mihomoX25519: boolean;
     overridePublicKey: string | null;
     overrideVlessUuid: string | null;
+    overrideShortId: string | null;
 
     configProfileUuid: string | null;
     configProfileInboundUuid: string | null;

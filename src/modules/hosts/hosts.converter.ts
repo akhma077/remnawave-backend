@@ -35,6 +35,7 @@ const entityToModel = (entity: HostsEntity): Hosts => {
         mihomoX25519: entity.mihomoX25519,
         overridePublicKey: entity.overridePublicKey ?? null,
         overrideVlessUuid: entity.overrideVlessUuid ?? null,
+        overrideShortId: entity.overrideShortId ?? null,
 
         tag: entity.tag,
         isHidden: entity.isHidden,

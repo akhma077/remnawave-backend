@@ -43,4 +43,5 @@ export const HostsSchema = z.object({
 
     overridePublicKey: z.string().nullable().optional(),
     overrideVlessUuid: z.string().uuid().nullable().optional(),
+    overrideShortId: z.string().nullable().optional(),
 });
